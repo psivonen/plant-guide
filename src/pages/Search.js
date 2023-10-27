@@ -3,15 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 import { ACCESS_KEY } from "../config";
 import imgnotfound from "../images/img-notfound.jpg";
-import {
-  Container,
-  Form,
-  FormControl,
-  InputGroup,
-  Col,
-  Row,
-  Card,
-} from "react-bootstrap";
+import {Container, Form, FormControl, InputGroup, Col, Row, Card} from "react-bootstrap";
 import SearchIcon from "@mui/icons-material/Search";
 import { ColorButton } from "../components/Styled";
 
@@ -27,6 +19,11 @@ const Search = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [isLoading, setIsLoading] = useState(false);
+
+  // If image is not available, due to API restrictions or another error, alternate image is displayed
+  const handleImageError = (altImage) => {
+    altImage.src = imgnotfound; // Set the src to the alternate image
+  };
 
   useEffect(() => {
     // Event listener for popstate event to handle browser back button
@@ -94,9 +91,10 @@ const Search = () => {
             {/* If the default_image exists, it is displayed; otherwise, the imgnotfound image is shown. */}
             {item.default_image && item.default_image.regular_url ? (
               <img
-                src={item.default_image.regular_url}
+                src={item.default_image && item.default_image.regular_url}
                 alt={item.common_name}
                 className="img-fluid"
+                onError={(e) => handleImageError(e.target)}
               />
             ) : (
               <img src={imgnotfound} alt="Not Found" className="img-fluid" />
