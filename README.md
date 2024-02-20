@@ -1,6 +1,35 @@
-Demo: https://psivonen.github.io/plant-guide-demo/
+# Plant Guide
 
-# Getting Started with Create React App
+### Description
+A React application where users interested in plants can explore a large collection of plants from the Perenual API, which provides comprehensive information about different plant species. Responsive and clear user interface built with Bootstrap so that the service can be used on many different devices. The project has utilized Firebase's various functions for user authentication and the database.
+
+### Built with
+
+[![React.js]][React-url]
+[![Bootstrap.com]][Bootstrap-url]
+[![Firebase]][Firebase-url]
+
+### Key features
+
+- User-friendly interface built with React and Bootstrap offers a seamless and mobile-friendly user experience.
+- An extensive plant species collection with detailed information on care, watering, sunlight requirements and more is available.
+- The aesthetic appeal of the application is enhanced by Bootstrap, which offers a responsive and visually appealing look on different devices.
+- Real-time data synchronization and secure user authentication with Firebase.
+
+### Conclusion
+
+This React application showcases my skills in front-end development, design and integration with external APIs.
+
+<b>Demo:</b> https://psivonen.github.io/plant-guide-demo/
+
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Firebase]: https://img.shields.io/badge/firebase-logo?style=for-the-badge&logo=firebase&logoColor=FFD52D&color=%231a73e8
+[Firebase-url]: https://firebase.google.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
