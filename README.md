@@ -1,5 +1,7 @@
 # Plant Guide
 
+![plant-guide-1](https://github.com/psivonen/plant-guide/assets/44951778/dd82b29c-1989-4a0e-a282-e7bbbafaa225)
+
 ### Description
 A React application where users interested in plants can explore a large collection of plants from the Perenual API, which provides comprehensive information about different plant species. Responsive and clear user interface built with Bootstrap so that the service can be used on many different devices. The project has utilized Firebase's various functions for user authentication and the database.
 
